@@ -1,0 +1,40 @@
+{
+  "name": "defender-game",
+  "version": "1.0.0",
+  "description": "Browser based game",
+  "keywords": [
+    "game"
+  ],
+  "homepage": "https://github.com/kovalkante33/workspace#readme",
+  "bugs": {
+    "url": "https://github.com/kovalkante33/workspace/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kovalkante33/workspace.git"
+  },
+  "license": "ISC",
+  "author": "kovalkante33",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@eslint/css": "^0.8.1",
+    "@eslint/js": "^9.27.0",
+    "@eslint/json": "^0.12.0",
+    "@eslint/markdown": "^6.4.0",
+    "eslint": "^9.27.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.1.0"
+  },
+  "dependencies": {
+    "core-js": "^3.42.0"
+  }
+}
