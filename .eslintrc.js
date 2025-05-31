@@ -1,14 +1,22 @@
 module.exports = {
-    'env': {
-        'browser': true,
-        'es2021': true,
-        'node': true
+    env: {
+        browser: true,
+        es2021: true,
+        node: true,
     },
-    'extends': 'eslint:recommended',
-    'overrides': [],
-    'parserOptions': {
-        'ecmaVersion': 'latest',
-        'sourceType': 'module'
+    extends: 'airbnb-base',
+    overrides: [],
+    parser: '@babel/eslint-parser',
+    parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        requireConfigFile: false,
     },
-    'rules': {}
-}
+    rules: {
+        'no-restricted-syntax': [
+            'error',
+            'LabeledStatement',
+            'WithStatement',
+        ],
+    },
+};
