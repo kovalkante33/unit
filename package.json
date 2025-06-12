@@ -5,13 +5,13 @@
   "keywords": [
     "game"
   ],
-  "homepage": "https://github.com/kovalkante33/workspace#readme",
+  "homepage": "https://github.com/kovalkante33/unit.git#readme",
   "bugs": {
-    "url": "https://github.com/kovalkante33/workspace/issues"
+    "url": "https://github.com/kovalkante33/unit.git/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kovalkante33/workspace.git"
+    "url": "git+https://github.com/kovalkante33/unit.git"
   },
   "license": "ISC",
   "author": "kovalkante33",
