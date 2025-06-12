@@ -1,24 +1,20 @@
-name: Node.js CI
+environment:
+  nodejs_version: "18"
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+branches:
+  only:
+    - master  # ветка git
+    - main
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
+cache: node_modules  # кеширование
 
-    strategy:
-      matrix:
-        node-version: [18.x]
+install:
+  - npm install  # команда установки зависимостей
 
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm test
+build: off  # отключаем встроенную в appveyor систему сборки
+
+build_script:
+  - npm run build   # команда сборки
+
+test_script:
+  - npm run lint && npm test  # скрипт тестирования
