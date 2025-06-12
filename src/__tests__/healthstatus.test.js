@@ -19,7 +19,7 @@ describe('getHealthStatus', () => {
     expect(getHealthStatus({ name: 'Маг', health: -5 })).toBe('critical');
   });
 
-test('should throw error for invalid character object', () => {
+  test('should throw error for invalid character object', () => {
     expect(() => getHealthStatus(null)).toThrow('Invalid character object');
     expect(() => getHealthStatus(undefined)).toThrow('Invalid character object');
     expect(() => getHealthStatus({ name: 'Маг' })).toThrow('Invalid character object');
