@@ -14,9 +14,9 @@ module.exports = {
   },
   rules: {
     'no-restricted-syntax': [
-        'error',
-        'LabeledStatement',
-        'WithStatement',
+      'error',
+      'LabeledStatement',
+      'WithStatement',
     ],
   },
 };

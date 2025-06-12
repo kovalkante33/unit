@@ -1,4 +1,4 @@
-import { sortHeroesByHealth } from "../healthstatus";
+import { sortHeroesByHealth } from "../healthstatus.js";
 
 describe('sortHeroesByHealth', () => {
   test('should sort heroes by health in descending order', () => {
